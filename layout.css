@@ -1,0 +1,193 @@
+/********** forside **********/
+
+.hero_text {
+  font-size: 2rem;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+
+  color: transparent;
+  background-clip: text;
+  background-image: url("img/gradient.png");
+  background-size: 150%;
+
+  animation: kf_herot 30s cubic-bezier(0.3, 0, 0.7, 1);
+}
+
+@keyframes kf_herot {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.klara {
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.studerer {
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.hero {
+  background-color: black;
+  padding: 10vw;
+}
+
+.pil {
+  background-color: #000000;
+  background-size: 200px;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 0px;
+  padding-inline: 42px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  text-decoration: none;
+}
+.pil:hover {
+  color: transparent;
+  background-clip: text;
+  background-image: url("img/gradient.png");
+  background-size: 150%;
+
+  animation: kf_hover 2s cubic-bezier(0.3, 0, 0.7, 1);
+}
+
+@keyframes kf_hover {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/****** 02 ***********/
+
+@media (min-width: 750px) {
+  .grid1_1 {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.se {
+  background-color: #000000;
+  background-size: 200px;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 9px;
+  padding-inline: 23px;
+  border-radius: 50px;
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-size: 2.8rem;
+  text-decoration: none;
+}
+.se:hover {
+  color: transparent;
+  background-clip: text;
+  background-image: url("img/gradient.png");
+  background-size: 150%;
+
+  animation: kf_hover 2s cubic-bezier(0.3, 0, 0.7, 1);
+}
+
+.se-knap {
+  display: flex;
+  justify-content: center;
+}
+
+.flex_boks {
+  display: grid;
+  justify-content: center;
+}
+
+.boks_02_1 {
+  padding: 10vw;
+}
+
+.tekst_boks_02 {
+  padding: 10vw;
+}
+
+.indhold_02 {
+  padding: 10vw;
+}
+
+.lering_02 {
+  padding: 10vw;
+}
+
+/************* 03 ***************/
+.tekst_boks_03 {
+}
+
+.proces_03 {
+  background-color: #accdff;
+  color: black;
+  padding: 10vw;
+}
+
+.flex_boks_03 {
+  display: grid;
+  justify-content: center;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+
+  font-size: 1rem;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  /* color: transparent;
+  background-clip: text; */
+  background-image: url("img/gradient.png");
+  /* background-size: 150%; */
+
+  animation: kf_boks 30s cubic-bezier(0.3, 0, 0.7, 1);
+}
+
+@keyframes kf_boks {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.ungt,
+.moder,
+.kulturelt {
+  display: grid;
+  justify-content: center;
+}
+
+.videre_knap {
+  display: grid;
+  justify-content: center;
+  padding-top: 20vw;
+  padding-bottom: 10vw;
+}
