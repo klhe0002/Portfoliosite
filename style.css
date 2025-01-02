@@ -58,9 +58,9 @@ body {
 }
 
 p {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-family: "Roboto", serif;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   color: rgb(255, 255, 255);
   line-height: 138%;
@@ -230,8 +230,9 @@ nav {
 
 .footer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   padding: 2vw;
+  background-color: #eaeaea;
+  justify-content: center;
 }
 
 .footer a {
@@ -244,4 +245,45 @@ nav {
   font-weight: 300;
   font-style: italic;
   font-size: 2rem;
+}
+
+.footer_logo {
+  display: grid;
+  grid-row: 1/3;
+}
+
+.fod_1,
+.fod_2 {
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+
+  padding: 0;
+  display: grid;
+}
+
+.grid2_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projekter {
+  display: grid;
+  grid-row: 1/2;
+}
+
+.om {
+  display: grid;
+  grid-row: 2/3;
+}
+
+@media screen and (min-width: 800px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2vw;
+    background-color: #eaeaea;
+  }
 }

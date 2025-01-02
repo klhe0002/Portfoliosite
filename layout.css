@@ -80,10 +80,67 @@
 
 /****** 02 ***********/
 
-@media (min-width: 750px) {
-  .grid1_1 {
+@media (max-width: 750px) {
+  .forside_grid1_1 {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; /* Afstand mellem elementer */
+    padding-bottom: 10vw;
+  }
+
+  .img_02 {
+    order: 1;
+    padding: 10vw;
+    padding-bottom: 0;
+  }
+
+  .tekst_02 {
+    order: 2;
+    padding-left: 10vw;
+    padding-bottom: 15vw;
+  }
+
+  .tekst_03 {
+    order: 4;
+    padding-left: 10vw;
+    padding-bottom: 15vw;
+  }
+
+  .img_03 {
+    order: 3;
+    padding: 10vw;
+    padding-bottom: 0;
+  }
+
+  .img_04 {
+    order: 6;
+    padding: 10vw;
+    padding-bottom: 0;
+  }
+
+  .tekst_04 {
+    order: 6;
+    padding-left: 10vw;
+    padding-bottom: 15vw;
+  }
+
+  .tekst_05 {
+    order: 9;
+    padding-left: 10vw;
+    padding-bottom: 15vw;
+  }
+
+  .img_05 {
+    order: 8;
+    padding: 10vw;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 750px) {
+  .forside_grid1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
