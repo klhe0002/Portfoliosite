@@ -10,7 +10,7 @@
   background-image: url("img/gradient.png");
   background-size: 150%;
 
-  animation: kf_herot 10s cubic-bezier(0.3, 0, 0.7, 1);
+  animation: kf_herot 7s cubic-bezier(0.3, 0, 0.7, 1);
 }
 
 @keyframes kf_herot {
@@ -23,6 +23,17 @@
   100% {
     background-position: 0% 0%;
   }
+}
+
+@media (max-width: 750%) {
+  .arrow {
+    display: none;
+  }
+}
+
+.pil-knap1 {
+  display: grid;
+  justify-content: center;
 }
 
 .forside_h1 {
@@ -85,6 +96,14 @@
 }
 
 @media (min-width: 750px) {
+  .arrow {
+    display: ;
+    position: absolute;
+    width: 2%;
+    left: 43%;
+    top: 75%;
+  }
+
   .forside_h3 {
     padding-bottom: 4vw;
     font-size: 3rem;
@@ -239,11 +258,6 @@
     padding-right: 15vw !important;
     padding-top: 5vw !important;
     padding-bottom: 10vw !important;
-  }
-
-  .pil-knap {
-    display: grid;
-    justify-content: center;
   }
 }
 
@@ -640,3 +654,5 @@
     transform: translateX(0); /* Tilbage til startposition */
   }
 }
+
+/**** projekter *******/
