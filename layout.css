@@ -1,5 +1,4 @@
 /********** forside **********/
-
 .hero_text {
   font-size: 2rem;
   font-family: "Roboto", serif;
@@ -11,7 +10,7 @@
   background-image: url("img/gradient.png");
   background-size: 150%;
 
-  animation: kf_herot 30s cubic-bezier(0.3, 0, 0.7, 1);
+  animation: kf_herot 10s cubic-bezier(0.3, 0, 0.7, 1);
 }
 
 @keyframes kf_herot {
@@ -24,6 +23,10 @@
   100% {
     background-position: 0% 0%;
   }
+}
+
+.forside_h1 {
+  color: transparent;
 }
 
 .klara {
@@ -40,7 +43,10 @@
 
 .hero {
   background-color: black;
-  padding: 10vw;
+  padding-left: 10vw;
+  padding-top: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 20vw;
 }
 
 .pil {
@@ -75,6 +81,66 @@
   }
   100% {
     background-position: 0% 0%;
+  }
+}
+
+@media (min-width: 750px) {
+  .forside_h3 {
+    padding-bottom: 4vw;
+    font-size: 3rem;
+  }
+
+  .forside_grid1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    padding-top: 5vw;
+  }
+
+  .forside_undertitel {
+    padding-bottom: 0;
+    font-size: 4rem;
+  }
+
+  .img_02 {
+    padding-left: 10vw;
+    padding-right: 5vw;
+  }
+
+  .tekst_02 {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .img_03 {
+    padding-left: 5vw;
+    padding-right: 10vw;
+  }
+
+  .tekst_03 {
+    padding-left: 10vw;
+    padding-right: 5vw;
+  }
+
+  .img_04 {
+    padding-left: 10vw;
+    padding-right: 5vw;
+  }
+
+  .tekst_04 {
+    padding-left: 5vw;
+    padding-right: 10vw;
+  }
+
+  .img_05 {
+    padding-left: 5vw;
+    padding-right: 10vw;
+  }
+
+  .tekst_05 {
+    padding-left: 10vw;
+    padding-right: 5vw;
   }
 }
 
@@ -138,9 +204,46 @@
 }
 
 @media (min-width: 750px) {
-  .forside_grid1_1 {
+  .grid1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+  }
+
+  .mobil_02 {
+    width: 60%;
+  }
+
+  .boks_02_1 {
+    padding-left: 15vw !important;
+    padding-right: 15vw !important;
+    padding-top: 0 !important;
+    padding-bottom: 7vw !important;
+  }
+
+  .tekst_boks_02 {
+    padding-left: 15vw !important;
+    padding-right: 15vw !important;
+    padding-top: 7vw !important;
+    padding-bottom: 0 !important;
+  }
+
+  .indhold_02 {
+    padding-left: 15vw !important;
+    padding-right: 15vw !important;
+    padding-bottom: 0 !important;
+  }
+
+  .lering_02 {
+    padding-left: 15vw !important;
+    padding-right: 15vw !important;
+    padding-top: 5vw !important;
+    padding-bottom: 10vw !important;
+  }
+
+  .pil-knap {
+    display: grid;
+    justify-content: center;
   }
 }
 
@@ -195,8 +298,6 @@
 }
 
 /************* 03 ***************/
-.tekst_boks_03 {
-}
 
 .proces_03 {
   background-color: #accdff;
@@ -249,7 +350,27 @@
   padding-bottom: 10vw;
 }
 
-/************ 05 **********/
+@media (min-width: 750px) {
+  .proces_03 {
+    padding-top: 7vw !important ;
+    padding-left: 15vw !important;
+    padding-right: 15vw !important;
+    padding-bottom: 3vw !important;
+  }
+
+  .videre_knap {
+    padding-top: 5vw !important;
+    padding-bottom: 7vw !important;
+  }
+
+  .lering_04 {
+    padding-left: 15vw !important;
+    padding-right: 15vw !important;
+    padding-top: 5vw !important;
+  }
+}
+
+/************ 04 **********/
 
 .lerings_boks_04 {
   background-color: #e4ccff;
@@ -323,6 +444,25 @@
   animation-iteration-count: infinite;
 }
 
+#liv_container {
+  width: 13%;
+  aspect-ratio: 200/200;
+  position: absolute;
+  top: 450%;
+  left: 55%;
+}
+
+#liv_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(img/liv.svg);
+  background-size: cover;
+
+  animation-name: rotation_kf;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
 .trump {
   position: relative;
   padding-top: 10vw;
@@ -334,14 +474,34 @@
   animation-iteration-count: infinite;
 }
 
+@media (min-width: 750px) {
+  .trump {
+    width: 10%;
+    left: 19%;
+  }
+}
 /************* 05 *************/
 .lottie {
-  width: 100%;
-  height: 100%;
-  top: -13%;
-  left: -1%;
-  position: absolute;
+  /* width: 80%;
+  height: 100%; */
+  top: 270%;
+  left: 0%;
+  position: relative;
   pointer-events: none;
+}
+
+@media (min-width: 750px) {
+  .mood_05 {
+    width: 50%;
+  }
+  .lottie {
+    width: 80%;
+    height: 100%;
+    top: 270%;
+    left: 35%;
+    position: relative;
+    pointer-events: none;
+  }
 }
 
 /******** om **************/
@@ -365,8 +525,118 @@
   font-style: italic;
   font-size: 2rem;
   color: white;
+  border-color: rgb(24, 146, 0);
+  border-radius: 52px;
+  border-style: solid;
+  padding-inline: 28px;
+  border-width: 1px;
+
+  padding: 10px;
+  width: 15%;
+}
+
+.kompetencer_1 {
+  position: absolute;
+  left: 10%;
+}
+
+.kompetencer_2 {
+  position: absolute;
+  left: 70%;
+}
+
+.kompetencer_3 {
+  position: absolute;
+  left: 40%;
+}
+
+.kompetencer_5 {
+  position: absolute;
+  left: 60%;
+}
+
+.kompetencer_6 {
+  position: absolute;
+  left: 80%;
+  top: 370%;
+}
+
+.kompetencer_7 {
+  position: absolute;
+  left: 15%;
+}
+
+.kompetencer_8 {
+  position: absolute;
+  left: 50%;
+}
+
+.kompetencer_10 {
+  position: absolute;
+  left: 15%;
 }
 
 .kompetencer {
   padding: 10vw;
+}
+
+.padding {
+  padding: 2vw;
+}
+
+@media (min-width: 750px) {
+  .om_side {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+
+  .mig {
+    padding-left: 20vw !important;
+    padding-right: 20vw !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+.kompetencer_1:hover,
+.kompetencer_2:hover,
+.kompetencer_3:hover,
+.kompetencer_4:hover,
+.kompetencer_5:hover,
+.kompetencer_6:hover,
+.kompetencer_7:hover,
+.kompetencer_8:hover,
+.kompetencer_9:hover,
+.kompetencer_10:hover {
+  color: transparent;
+  background-clip: text;
+  background-image: url("img/gradient.png");
+  background-size: 100%;
+  cursor: pointer;
+
+  animation: kf_hover2 0.2s cubic-bezier(0.3, 0, 0.7, 1);
+  animation: kf_move 5s linear forwards;
+}
+
+@keyframes kf_hover2 {
+  0% {
+    background-position: 100% 100%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes kf_move {
+  0% {
+    transform: translateX(0); /* Startposition */
+  }
+  50% {
+    transform: translateX(20px); /* Flyt 200px til højre */
+  }
+  100% {
+    transform: translateX(0); /* Tilbage til startposition */
+  }
 }

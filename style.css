@@ -109,12 +109,76 @@ h3 {
   color: white;
 }
 
+@media (min-width: 750px) {
+  p {
+    font-size: 2rem;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    line-height: 138%;
+    padding-bottom: 7vw;
+  }
+
+  .p_titel {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.9rem;
+    color: white;
+  }
+
+  h1 {
+    font-size: 4rem;
+    padding-left: 3vw;
+  }
+
+  .undertitel {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 3rem;
+    color: white;
+    padding-bottom: 7vw;
+  }
+
+  .undertitel_p {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 3rem;
+    color: white;
+    padding-bottom: 0;
+  }
+
+  h2 {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 5rem;
+    color: white;
+    padding-bottom: 3vw;
+  }
+
+  h3 {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 2.8rem;
+    color: white;
+  }
+
+  header {
+    padding-bottom: 10vw !important;
+  }
+}
+
 /******** menu ********/
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
   background-color: #000000;
   color: #ffffff;
   font-family: "Roboto", serif;
@@ -228,6 +292,10 @@ nav {
   width: 35%;
 } */
 
+.logo {
+  padding: 0;
+}
+
 .footer {
   display: grid;
   padding: 2vw;
@@ -245,6 +313,10 @@ nav {
   font-weight: 300;
   font-style: italic;
   font-size: 2rem;
+}
+
+.footer a:hover {
+  color: #ee22cc;
 }
 
 .footer_logo {
@@ -282,8 +354,22 @@ nav {
 @media screen and (min-width: 800px) {
   .footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2vw;
+    padding: 5vw;
     background-color: #eaeaea;
+  }
+
+  .footer_logo {
+    width: 70%;
+    display: grid;
+    grid-row: 1/4;
+  }
+
+  .footer a {
+    font-size: 6rem;
+  }
+
+  .centrer {
+    display: grid;
+    grid-row: 2/3;
   }
 }
