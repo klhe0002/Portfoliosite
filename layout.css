@@ -10,7 +10,7 @@
   background-image: url("img/gradient.png");
   background-size: 150%;
 
-  animation: kf_herot 7s cubic-bezier(0.3, 0, 0.7, 1);
+  animation: kf_herot 10s cubic-bezier(0.3, 0, 0.7, 1) infinite;
 }
 
 @keyframes kf_herot {
@@ -25,9 +25,9 @@
   }
 }
 
-@media (max-width: 750%) {
+@media (max-width: 750px) {
   .arrow {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -55,7 +55,7 @@
 .hero {
   background-color: black;
   padding-left: 10vw;
-  padding-top: 10vw;
+  /* padding-top: 10vw; */
   padding-right: 10vw;
   padding-bottom: 20vw;
 }
@@ -97,11 +97,10 @@
 
 @media (min-width: 750px) {
   .arrow {
-    display: ;
     position: absolute;
     width: 2%;
     left: 43%;
-    top: 75%;
+    top: 55%;
   }
 
   .forside_h3 {
@@ -122,9 +121,25 @@
     font-size: 4rem;
   }
 
+  @keyframes kf_appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
   .img_02 {
-    padding-left: 10vw;
-    padding-right: 5vw;
+    /* padding-left: 10vw;
+    padding-right: 5vw; */
+
+    animation: kf_appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
   }
 
   .tekst_02 {
@@ -132,30 +147,30 @@
     padding-right: 5vw;
   }
 
-  .img_03 {
+  /* .img_03 {
     padding-left: 5vw;
     padding-right: 10vw;
-  }
+  } */
 
   .tekst_03 {
     padding-left: 10vw;
     padding-right: 5vw;
   }
 
-  .img_04 {
+  /* .img_04 {
     padding-left: 10vw;
     padding-right: 5vw;
-  }
+  } */
 
   .tekst_04 {
     padding-left: 5vw;
     padding-right: 10vw;
   }
 
-  .img_05 {
+  /* .img_05 {
     padding-left: 5vw;
     padding-right: 10vw;
-  }
+  } */
 
   .tekst_05 {
     padding-left: 10vw;
@@ -171,6 +186,10 @@
     flex-wrap: wrap;
     gap: 20px; /* Afstand mellem elementer */
     padding-bottom: 10vw;
+
+    animation: kf_appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
   }
 
   .img_02 {
@@ -382,6 +401,14 @@
     padding-right: 15vw !important;
     padding-top: 5vw !important;
   }
+
+  .flex_boks_03 {
+    display: flex;
+    justify-content: center;
+    gap: 20vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
 }
 
 /************ 04 **********/
@@ -546,56 +573,79 @@
   border-width: 1px;
 
   padding: 10px;
-  width: 15%;
+  width: 61%;
 }
 
-.kompetencer_1 {
-  position: absolute;
-  left: 10%;
-}
+@media (min-width: 750px) {
+  .kompetencer_1,
+  .kompetencer_2,
+  .kompetencer_3,
+  .kompetencer_4,
+  .kompetencer_5,
+  .kompetencer_6,
+  .kompetencer_7,
+  .kompetencer_8,
+  .kompetencer_9,
+  .kompetencer_10 {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 2rem;
+    color: white;
+    border-color: rgb(24, 146, 0);
+    border-radius: 52px;
+    border-style: solid;
+    padding-inline: 28px;
+    border-width: 1px;
 
-.kompetencer_2 {
-  position: absolute;
-  left: 70%;
-}
+    padding: 10px;
+    width: 15%;
+  }
 
-.kompetencer_3 {
-  position: absolute;
-  left: 40%;
-}
+  .kompetencer_1 {
+    position: absolute;
+    left: 10%;
+  }
 
-.kompetencer_5 {
-  position: absolute;
-  left: 60%;
-}
+  .kompetencer_2 {
+    position: absolute;
+    left: 70%;
+  }
 
-.kompetencer_6 {
-  position: absolute;
-  left: 80%;
-  top: 370%;
-}
+  .kompetencer_3 {
+    position: absolute;
+    left: 40%;
+  }
 
-.kompetencer_7 {
-  position: absolute;
-  left: 15%;
-}
+  .kompetencer_5 {
+    position: absolute;
+    left: 60%;
+  }
 
-.kompetencer_8 {
-  position: absolute;
-  left: 50%;
-}
+  .kompetencer_6 {
+    position: absolute;
+    left: 80%;
+    top: 370%;
+  }
 
-.kompetencer_10 {
-  position: absolute;
-  left: 15%;
-}
+  .kompetencer_7 {
+    position: absolute;
+    left: 15%;
+  }
 
-.kompetencer {
-  padding: 10vw;
-}
+  .kompetencer_8 {
+    position: absolute;
+    left: 50%;
+  }
 
-.padding {
-  padding: 2vw;
+  .kompetencer_10 {
+    position: absolute;
+    left: 15%;
+  }
+
+  .kompetencer {
+    padding: 10vw;
+  }
 }
 
 @media (min-width: 750px) {
@@ -655,4 +705,15 @@
   }
 }
 
+.padding {
+  padding: 2vw;
+}
+
+@media (max-width: 750px) {
+  .kompetencer {
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+    padding-left: 5vw;
+  }
+}
 /**** projekter *******/
