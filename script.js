@@ -12,3 +12,16 @@ function menuClick() {
   burger.classList.remove("active");
   nav.classList.remove("active");
 }
+
+// Hent alle links i navigationen
+const navLinks = document.querySelectorAll("nav a");
+
+// Få den aktuelle sidesti
+const currentPage = window.location.pathname;
+
+// Marker det aktive link
+navLinks.forEach((link) => {
+  if (link.href.includes(currentPage)) {
+    link.classList.add("active");
+  }
+});

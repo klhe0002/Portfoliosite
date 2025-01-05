@@ -178,10 +178,12 @@ h3 {
 }
 
 /******** menu ********/
-.nav a.active {
-  font-weight: bold;
-  color: #ff5722; /* Fremhæv farven */
-  border-bottom: 2px solid #ff5722; /* Understregning */
+nav a.active {
+  color: #ffffff;
+  /* font-weight: bold; */
+  border-bottom: 2px solid #ee22cc;
+  border-radius: 2px;
+  border-width: 1px;
 }
 
 header {

@@ -25,6 +25,10 @@
   }
 }
 
+.forside_om{
+  padding-bottom: 15vw;
+}
+
 @media (max-width: 750px) {
   .arrow {
     display: none !important;
@@ -175,6 +179,154 @@
   .tekst_05 {
     padding-left: 10vw;
     padding-right: 5vw;
+  }
+}
+
+/********** projekter *********/
+@media (min-width: 750px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    padding-top: 80px;
+    padding-bottom: 10vw;
+  }
+}
+
+.tekst_boks {
+  padding-left: 0%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.grid_1-1 {
+  gap: 40px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 80px;
+}
+
+.index {
+  padding-left: 0%;
+}
+
+.index_2 {
+  padding-left: 0%;
+}
+
+.index_3 {
+  border: 0; /* Fjern standardkanten */
+  height: 0.5px; /* Sæt tykkelsen af linjen */
+  background-color: #333; /* Vælg en farve til linjen */
+  width: 100%; /* Juster bredden af linjen */
+  margin: auto;
+}
+/********** hover på katalog 1 ***********/
+
+@media (max-width:750px){
+.grid_1-1 {
+  padding-bottom: 10vw;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center; /* Centrerer billedet horisontalt */
+  align-items: center; /* Centrerer billedet vertikalt */
+  /* height: 60vh; Gør wrapperen stor nok til at centrere indholdet i skærmen */
+  padding-top: 15vw;
+}
+}
+
+.hover-1 {
+  position: relative; /* Gør det muligt at placere overlayet */
+  display: inline-block; /* Gør containeren til en blok, der kun fylder billedets bredde */
+}
+
+.katalog-1 {
+  width: 100%; /* Sæt den ønskede bredde på billedet */
+  height: auto; /* Beholder billedets proportioner */
+  display: block; /* Fjerner mellemrum under billedet */
+}
+
+.overlay {
+  position: absolute; /* Gør det muligt at placere overlayet over billedet */
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0; /* Skjuler overlayet som standard */
+  display: flex; /* Gør det muligt at centrere teksten */
+  justify-content: center; /* Centrerer teksten vandret */
+  align-items: center; /* Centrerer teksten lodret */
+  transition: opacity 0.3s ease; /* Glidende overgang for opacitet */
+
+   font-size: 2rem;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+    bottom: 27px;
+border-radius: 20px;
+background-color: #000000;
+}
+
+.hover-1:hover .overlay {
+  opacity: 1; /* Gør overlayet synligt ved hover */
+}
+
+.tekst {
+  color: rgb(255, 255, 255); /* Gør teksten hvid */
+  text-align: center; /* Centrerer teksten */
+   font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2.8rem;
+
+  color: transparent;
+  background-clip:text;
+  background-image: url("img/gradient.png");
+  background-size: 150%;
+
+  animation: kf_herot 10s cubic-bezier(0.3, 0, 0.7, 1) infinite;
+}
+
+@media (min-width: 750px) {
+  .katalog-1 {
+    width: 480px; /* Sæt den ønskede bredde på billedet */
+    height: auto; /* Beholder billedets proportioner */
+    display: block; /* Fjerner mellemrum under billedet */
+  }
+  .overlay {
+    position: absolute; /* Gør det muligt at placere overlayet over billedet */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 70px;
+    opacity: 0; /* Skjuler overlayet som standard */
+     display: flex; /* Gør det muligt at centrere teksten */
+    justify-content: center; /* Centrerer teksten vandret */
+    align-items: center; /* Centrerer teksten lodret */
+    transition: opacity 0.3s ease; */ */ */
+
+    font-size: 2rem;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+    bottom: 70px;
+border-radius: 20px;
+background-color: #000000;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center; /* Centrerer billedet horisontalt */
+    align-items: center; /* Centrerer billedet vertikalt */
+    /* height: 80vh;   Gør wrapperen stor nok til at centrere indholdet i skærmen */
+  }
+
+  .tekst_boks {
+    padding-left: 0%;
+    text-align: left;
+    padding-left: 10vw;
+    padding-right: 91px;
   }
 }
 
@@ -551,6 +703,10 @@
   padding: 10vw;
 }
 
+.tekst_boks_om{
+  padding-bottom: 10vw;
+}
+
 .kompetencer_1,
 .kompetencer_2,
 .kompetencer_3,
@@ -644,7 +800,9 @@
   }
 
   .kompetencer {
-    padding: 10vw;
+    padding-left: 10vw;
+       padding-right: 10vw;
+          padding-bottom: 10vw;
   }
 }
 
