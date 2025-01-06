@@ -206,6 +206,8 @@
   width: 100%; 
   margin: auto;
 }
+
+
 /********** hover på katalog 1 ***********/
 
 @media (max-width:750px){
@@ -695,7 +697,7 @@ background-color: #000000;
     width: 50%;
   }
   .lottie {
-    width: 80%;
+  width: 80vh;
     height: 100%;
     top: 270%;
     left: 35%;
