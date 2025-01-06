@@ -137,9 +137,7 @@
     }
   }
 
-  .img_02 {
-    /* padding-left: 10vw;
-    padding-right: 5vw; */
+  .img_02, .img_03, .img_04, .img_05 {
 
     animation: kf_appear linear;
     animation-timeline: view();
@@ -151,30 +149,15 @@
     padding-right: 5vw;
   }
 
-  /* .img_03 {
-    padding-left: 5vw;
-    padding-right: 10vw;
-  } */
-
   .tekst_03 {
     padding-left: 10vw;
     padding-right: 5vw;
   }
 
-  /* .img_04 {
-    padding-left: 10vw;
-    padding-right: 5vw;
-  } */
-
   .tekst_04 {
     padding-left: 5vw;
     padding-right: 10vw;
   }
-
-  /* .img_05 {
-    padding-left: 5vw;
-    padding-right: 10vw;
-  } */
 
   .tekst_05 {
     padding-left: 10vw;
@@ -217,10 +200,10 @@
 }
 
 .index_3 {
-  border: 0; /* Fjern standardkanten */
-  height: 0.5px; /* Sæt tykkelsen af linjen */
-  background-color: #333; /* Vælg en farve til linjen */
-  width: 100%; /* Juster bredden af linjen */
+  border: 0; 
+  height: 0.5px; 
+  background-color: #333; 
+  width: 100%; 
   margin: auto;
 }
 /********** hover på katalog 1 ***********/
@@ -232,34 +215,33 @@
 
 .wrapper {
   display: flex;
-  justify-content: center; /* Centrerer billedet horisontalt */
-  align-items: center; /* Centrerer billedet vertikalt */
-  /* height: 60vh; Gør wrapperen stor nok til at centrere indholdet i skærmen */
+  justify-content: center; 
+  align-items: center; 
   padding-top: 15vw;
 }
 }
 
 .hover-1 {
-  position: relative; /* Gør det muligt at placere overlayet */
-  display: inline-block; /* Gør containeren til en blok, der kun fylder billedets bredde */
+  position: relative; 
+  display: inline-block; 
 }
 
 .katalog-1 {
-  width: 100%; /* Sæt den ønskede bredde på billedet */
-  height: auto; /* Beholder billedets proportioner */
-  display: block; /* Fjerner mellemrum under billedet */
+  width: 100%; 
+  height: auto; 
+  display: block; 
 }
 
 .overlay {
-  position: absolute; /* Gør det muligt at placere overlayet over billedet */
+  position: absolute; 
   top: 0;
   left: 0;
   right: 0;
-  opacity: 0; /* Skjuler overlayet som standard */
-  display: flex; /* Gør det muligt at centrere teksten */
-  justify-content: center; /* Centrerer teksten vandret */
-  align-items: center; /* Centrerer teksten lodret */
-  transition: opacity 0.3s ease; /* Glidende overgang for opacitet */
+  opacity: 0; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  transition: opacity 0.3s ease;
 
    font-size: 2rem;
   font-family: "Roboto", serif;
@@ -292,20 +274,20 @@ background-color: #000000;
 
 @media (min-width: 750px) {
   .katalog-1 {
-    width: 480px; /* Sæt den ønskede bredde på billedet */
-    height: auto; /* Beholder billedets proportioner */
-    display: block; /* Fjerner mellemrum under billedet */
+    width: 480px; 
+    height: auto; 
+    display: block; 
   }
   .overlay {
-    position: absolute; /* Gør det muligt at placere overlayet over billedet */
+    position: absolute; 
     top: 0;
     left: 0;
     right: 0;
     bottom: 70px;
-    opacity: 0; /* Skjuler overlayet som standard */
-     display: flex; /* Gør det muligt at centrere teksten */
-    justify-content: center; /* Centrerer teksten vandret */
-    align-items: center; /* Centrerer teksten lodret */
+    opacity: 0; 
+     display: flex; 
+    justify-content: center; 
+    align-items: center; 
     transition: opacity 0.3s ease; */ */ */
 
     font-size: 2rem;
@@ -318,9 +300,8 @@ background-color: #000000;
   }
   .wrapper {
     display: flex;
-    justify-content: center; /* Centrerer billedet horisontalt */
-    align-items: center; /* Centrerer billedet vertikalt */
-    /* height: 80vh;   Gør wrapperen stor nok til at centrere indholdet i skærmen */
+    justify-content: center; 
+    align-items: center; 
   }
 
   .tekst_boks {
