@@ -117,7 +117,7 @@
     grid-template-columns: 1fr 1fr;
     padding-right: 10vw;
     padding-left: 10vw;
-    padding-top: 5vw;
+    padding-top: 15vw;
   }
 
   .forside_undertitel {
@@ -179,6 +179,7 @@
   .tekst_05 {
     padding-left: 10vw;
     padding-right: 5vw;
+
   }
 }
 
@@ -325,7 +326,7 @@ background-color: #000000;
   .tekst_boks {
     padding-left: 0%;
     text-align: left;
-    padding-left: 10vw;
+    padding-left: 5vw;
     padding-right: 91px;
   }
 }
@@ -565,6 +566,10 @@ background-color: #000000;
 
 /************ 04 **********/
 
+.align{
+  align-self: auto;
+}
+
 .lerings_boks_04 {
   background-color: #e4ccff;
 }
@@ -590,13 +595,7 @@ background-color: #000000;
   left: 0;
 } */
 
-#fly_container {
-  width: 13%;
-  aspect-ratio: 200/200;
-  position: absolute;
-  top: 633px;
-  left: 330px;
-}
+
 
 #fly_sprite {
   width: 100%;
@@ -637,13 +636,24 @@ background-color: #000000;
   animation-iteration-count: infinite;
 }
 
+@media (max-width: 750px){
 #liv_container {
   width: 13%;
   aspect-ratio: 200/200;
   position: absolute;
-  top: 450%;
+  top: 430%;
   left: 55%;
 }
+
+#fly_container {
+  width: 25%;
+  aspect-ratio: 200/200;
+  position: static;
+  top: 633px;
+  left: 330px;
+}
+}
+
 
 #liv_sprite {
   width: 100%;
@@ -672,6 +682,22 @@ background-color: #000000;
     width: 10%;
     left: 19%;
   }
+
+  #liv_container {
+  width: 25%;
+  aspect-ratio: 200/200;
+  position: static;
+  top: 480%;
+  left: 55%;
+}
+
+#fly_container {
+  width: 35%;
+  aspect-ratio: 200/200;
+  position: static;
+  top: 170%;
+  left: 60%;
+}
 }
 /************* 05 *************/
 .lottie {
@@ -773,6 +799,10 @@ background-color: #000000;
     left: 40%;
   }
 
+  .kompetencer_4{
+    position: absolute;
+  }
+
   .kompetencer_5 {
     position: absolute;
     left: 60%;
@@ -794,9 +824,16 @@ background-color: #000000;
     left: 50%;
   }
 
+   .kompetencer_9{
+    position: absolute;
+    width: 20%;
+   top: 400%;
+  }
+
   .kompetencer_10 {
     position: absolute;
     left: 15%;
+    top: 415%;
   }
 
   .kompetencer {
