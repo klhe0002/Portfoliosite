@@ -14,45 +14,6 @@ img {
   padding-bottom: 7vw;
 }
 
-/*** css variabler ***/
-:root {
-  /**farver**/
-  --primary: #000000;
-  --secondary: #004491;
-  --accent: #fcc74d;
-  --grey: #ededed;
-  --white: #fffbfb;
-  --black: RGB(0, 0, 0);
-
-  /** font size **/
-  --h1mobil: 1rem;
-  --h1desktop: 2rem;
-
-  --h2mobil: 1.75rem;
-  --h2desktop: 2.8rem;
-
-  --h3mobil: 1.5rem;
-  --h3desktop: 1.75rem;
-
-  --h4mobil: 1.2rem;
-  --h4desktop: 1.5rem;
-
-  --pmobil: 0.9375rem;
-  --pdesktop: 1.2rem;
-
-  --minitekstmobil: 0.8125rem;
-  --minitekstdesktop: 0.875rem;
-
-  /*** css variabl space ***/
-  --space-xxs: 0.25rem;
-  --space-xs: 0.5rem;
-  --space-sm: 1rem;
-  --space-md: 1.5rem;
-  --space-lg: 2rem;
-  --space-xl: 3rem;
-  --space-xxl: 6rem;
-}
-
 body {
   background-color: black;
 }
@@ -105,8 +66,9 @@ h3 {
   font-family: "Roboto", serif;
   font-weight: 100;
   font-style: italic;
-  font-size: 2.8rem;
+  font-size: 2rem;
   color: white;
+  padding-bottom: 3vw;
 }
 
 @media (min-width: 750px) {

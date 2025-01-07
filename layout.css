@@ -255,12 +255,12 @@ background-color: #000000;
 }
 
 .hover-1:hover .overlay {
-  opacity: 1; /* Gør overlayet synligt ved hover */
+  opacity: 1; 
 }
 
 .tekst {
-  color: rgb(255, 255, 255); /* Gør teksten hvid */
-  text-align: center; /* Centrerer teksten */
+  color: rgb(255, 255, 255); 
+  text-align: center; 
    font-family: "Roboto", serif;
   font-weight: 300;
   font-style: normal;
@@ -291,14 +291,14 @@ background-color: #000000;
     justify-content: center; 
     align-items: center; 
     transition: opacity 0.3s ease; */ */ */
-
+    
     font-size: 2rem;
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
     bottom: 70px;
-border-radius: 20px;
-background-color: #000000;
+    border-radius: 20px;
+    background-color: #000000;
   }
   .wrapper {
     display: flex;
@@ -322,13 +322,13 @@ background-color: #000000;
 
 @keyframes kf_flex_moove {
   0% {
-    transform: translateX(0); /* Startposition */
+    transform: translateX(0); 
   }
   50% {
-    transform: translateX(150px); /* Flyt 200px til højre */
+    transform: translateX(150px); 
   }
   100% {
-    transform: translateX(0); /* Tilbage til startposition */
+    transform: translateX(0); 
   }
 }
 
@@ -338,13 +338,13 @@ background-color: #000000;
 
 @keyframes kf_grid_moove {
   0% {
-    transform: translateX(0); /* Startposition */
+    transform: translateX(0); 
   }
   50% {
-    transform: translateX(150px); /* Flyt 200px til højre */
+    transform: translateX(150px); 
   }
   100% {
-    transform: translateX(0); /* Tilbage til startposition */
+    transform: translateX(0); 
   }
 }
 
@@ -354,21 +354,21 @@ background-color: #000000;
 
 @keyframes kf_mobile_moove {
   0% {
-    transform: translateX(0); /* Startposition */
+    transform: translateX(0);
   }
   50% {
-    transform: translateX(150px); /* Flyt 200px til højre */
+    transform: translateX(150px);
   }
   100% {
-    transform: translateX(0); /* Tilbage til startposition */
+    transform: translateX(0); 
   }
 }
 
 @media (max-width: 750px) {
-  .forside_grid1_1, .grid1_1 {
+  .forside_grid1_1, .wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Afstand mellem elementer */
+    gap: 20px; 
     padding-bottom: 10vw;
 
     animation: kf_appear linear;
@@ -532,11 +532,7 @@ padding-top: 2vw;
   font-family: "Roboto", serif;
   font-weight: 400;
   font-style: normal;
-
-  /* color: transparent;
-  background-clip: text; */
   background-image: url("img/gradient.webp");
-  /* background-size: 150%; */
 
   animation: kf_boks 30s cubic-bezier(0.3, 0, 0.7, 1);
 }
@@ -618,27 +614,6 @@ padding-top: 2vw;
   padding-top: 10vw;
 }
 
-/* #game_elements {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
-
-
-
-#fly_sprite {
-  width: 100%;
-  height: 100%;
-  background-image: url(img/flyvemaskine.svg);
-  background-size: cover;
-
-  animation-name: rotation_kf;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-}
-
 @keyframes rotation_kf {
   0% {
   }
@@ -675,14 +650,6 @@ padding-top: 2vw;
   top: 430%;
   left: 55%;
 }
-
-#fly_container {
-  width: 25%;
-  aspect-ratio: 200/200;
-  position: static;
-  top: 633px;
-  left: 330px;
-}
 }
 
 
@@ -695,6 +662,18 @@ padding-top: 2vw;
   animation-name: rotation_kf;
   animation-duration: 30s;
   animation-iteration-count: infinite;
+}
+
+.fly{
+   position: relative;
+ padding-top: 10vw;
+  width: 25%;
+  left: 45%;
+
+  animation-name: rotation_kf;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+
 }
 
 .trump {
@@ -721,19 +700,9 @@ padding-top: 2vw;
   top: 480%;
   left: 55%;
 }
-
-#fly_container {
-  width: 35%;
-  aspect-ratio: 200/200;
-  position: static;
-  top: 170%;
-  left: 60%;
-}
 }
 /************* 05 *************/
 .lottie {
-  /* width: 80%;
-  height: 100%; */
   top: 270%;
   left: 0%;
   position: relative;
@@ -780,10 +749,8 @@ summary {
   cursor: pointer;
   outline: none;
   border-radius: 15px;
-  /* width: 510px; */
   align-items: center;
-  /* border-color: white;
-    border-style: solid; */
+ 
 }
 
  summary:hover {
@@ -809,10 +776,7 @@ details p {
   cursor: pointer;
   outline: none;
   border-radius: 15px;
-  /* width: 510px; */
   align-items: center;
-  /* border-color: white;
-    border-style: solid;v */
 }
 
 .sort {
@@ -881,10 +845,7 @@ details p {
   cursor: pointer;
   outline: none;
   border-radius: 15px;
-  /* width: 510px; */
   align-items: center;
-  /* border-color: white;
-    border-style: solid; */
 }
 
   summary:hover {
@@ -1020,7 +981,7 @@ details p {
     padding-right: 20vw !important;
     padding-bottom: 0 !important;
   }
-}
+
 
 .kompetencer_1:hover,
 .kompetencer_2:hover,
@@ -1041,6 +1002,21 @@ details p {
   animation: kf_hover2 0.2s cubic-bezier(0.3, 0, 0.7, 1);
   animation: kf_move 5s linear forwards;
 }
+}
+
+.kompetencer_1,
+.kompetencer_2,
+.kompetencer_3,
+.kompetencer_4,
+.kompetencer_5,
+.kompetencer_6,
+.kompetencer_7,
+.kompetencer_8,
+.kompetencer_9,
+.kompetencer_10 {
+  animation: kf_hover2 0.2s cubic-bezier(0.3, 0, 0.7, 1);
+  animation: kf_move 5s linear forwards infinite;
+}
 
 @keyframes kf_hover2 {
   0% {
@@ -1056,13 +1032,13 @@ details p {
 
 @keyframes kf_move {
   0% {
-    transform: translateX(0); /* Startposition */
+    transform: translateX(0); 
   }
   50% {
-    transform: translateX(20px); /* Flyt 200px til højre */
+    transform: translateX(20px); 
   }
   100% {
-    transform: translateX(0); /* Tilbage til startposition */
+    transform: translateX(0); 
   }
 }
 
