@@ -208,7 +208,7 @@
 }
 
 
-/********** hover på katalog 1 ***********/
+/********** hover på projekter ***********/
 
 @media (max-width:750px){
 .grid_1-1 {
@@ -316,8 +316,56 @@ background-color: #000000;
 
 /****** 02 ***********/
 
+.flex{
+  animation: kf_flex_moove 8s linear forwards infinite;
+}
+
+@keyframes kf_flex_moove {
+  0% {
+    transform: translateX(0); /* Startposition */
+  }
+  50% {
+    transform: translateX(150px); /* Flyt 200px til højre */
+  }
+  100% {
+    transform: translateX(0); /* Tilbage til startposition */
+  }
+}
+
+.grid{
+  animation: kf_grid_moove 6s linear forwards infinite;
+}
+
+@keyframes kf_grid_moove {
+  0% {
+    transform: translateX(0); /* Startposition */
+  }
+  50% {
+    transform: translateX(150px); /* Flyt 200px til højre */
+  }
+  100% {
+    transform: translateX(0); /* Tilbage til startposition */
+  }
+}
+
+.mobile{
+  animation: kf_mobile_moove 4s linear forwards infinite;
+}
+
+@keyframes kf_mobile_moove {
+  0% {
+    transform: translateX(0); /* Startposition */
+  }
+  50% {
+    transform: translateX(150px); /* Flyt 200px til højre */
+  }
+  100% {
+    transform: translateX(0); /* Tilbage til startposition */
+  }
+}
+
 @media (max-width: 750px) {
-  .forside_grid1_1 {
+  .forside_grid1_1, .grid1_1 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Afstand mellem elementer */
@@ -477,8 +525,8 @@ background-color: #000000;
 .flex_boks_03 {
   display: grid;
   justify-content: center;
-  padding-top: 10vw;
-  padding-bottom: 10vw;
+padding-top: 2vw;
+    padding-bottom: 2vw;
 
   font-size: 1rem;
   font-family: "Roboto", serif;
@@ -542,8 +590,8 @@ background-color: #000000;
     display: flex;
     justify-content: center;
     gap: 20vw;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
   }
 }
 
